@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/action_settings" android:title="@string/setting"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_resize" android:title="@string/resize"
+        android:orderInCategory="100" app:showAsAction="never"/>
+    <item android:id="@+id/action_daftar" android:title="Daftar"
+        android:orderInCategory="100" app:showAsAction="never"/>
+    <item android:id="@+id/action_kirim_server" android:title="Kirim Server"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+</menu>

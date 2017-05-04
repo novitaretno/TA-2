@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id= "@+id/view_signature">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMAGE 1"
+            android:id="@+id/img_view1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id= "@+id/img_source"
+            android:contentDescription="@string/image_source"
+            android:weightSum="1"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMAGE 2"
+            android:id="@+id/img_view2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id= "@+id/img_ttd"
+            android:contentDescription="@string/image_signature"
+            android:weightSum="1"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CROP IMAGE 1"
+            android:id="@+id/img_view4"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id= "@+id/img_source_crop"
+            android:contentDescription="@string/image_source"
+            android:weightSum="1"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id= "@+id/img_source_bound"
+            android:contentDescription="@string/image_source"
+            android:weightSum="1"
+            android:scaleType="fitCenter"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

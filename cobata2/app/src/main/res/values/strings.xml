@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">cobata2</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="batal">BATAL</string>
+    <string name="hapus">HAPUS</string>
+    <string name="absen_disini">ABSEN DISINI</string>
+    <string name="setting">Setting</string>
+    <string name="resize">Resize</string>
+    <string name="image_source">image source</string>
+    <string name="image_signature">image signature</string>
+</resources>
