@@ -55,7 +55,7 @@ public class Daftar_TandaTangan extends AppCompatActivity{
     String StoredPath;
 
     private static final String TAG = "Daftar_TandaTangan";
-    String DIRECTORY = Environment.getExternalStorageDirectory().getPath() + "/DigitSign/TandaTangan/5113100016_Novita/";
+    String DIRECTORY = Environment.getExternalStorageDirectory().getPath() + "/DCIM/DigitSign/TandaTangan/5113100016_Novita/";
 
 
     @Override
@@ -234,8 +234,8 @@ public class Daftar_TandaTangan extends AppCompatActivity{
                     break;
 
                 default:
-                    debug("Ignored touch event: " + event.toString());
-                    return false;
+                   // debug("Ignored touch event: " + event.toString());
+                    //return false;
             }
 
             invalidate((int) (dirtyRect.left - HALF_STROKE_WIDTH),

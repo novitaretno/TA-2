@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="IMAGE 2"
+            android:text="TTD DATASET KE-5"
             android:id="@+id/img_view2"/>
 
         <ImageView
@@ -42,7 +42,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CROP IMAGE 1"
+            android:text="TTD ABSEN MAHASISWA"
             android:id="@+id/img_view4"/>
 
         <ImageView

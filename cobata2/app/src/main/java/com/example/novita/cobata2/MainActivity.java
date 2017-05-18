@@ -72,10 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    String DIRECTORY = Environment.getExternalStorageDirectory().getPath() + "/DigitSign/Absen/";
+    String DIRECTORY = Environment.getExternalStorageDirectory().getPath() + "/DCIM/DigitSign/Absen/";
     //String pic_name = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
-    String StoredPath = DIRECTORY + "5113100016_Novita" + ".png";
-    String DIRECTORY_DATASET_TTD = Environment.getExternalStorageDirectory().getPath() + "/DigitSign/TandaTangan/5113100016_Novita/";
+    String StoredPath = DIRECTORY + "5113100082_Putri3" + ".png";
+    String DIRECTORY_DATASET_TTD = Environment.getExternalStorageDirectory().getPath() + "/DCIM/DigitSign/TandaTangan/5113100016_Novita/";
 
     private static final String TAG = "MainActivity";
 
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         public void onManagerConnected(int status) {
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS: {
-                    Log.v("log_tag", "OpenCV Loaded Successfully");
+    //                Log.v("log_tag", "OpenCV Loaded Successfully");
                 }
                 break;
                 default: {
@@ -204,8 +204,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void save(View v, String StoredPath) {
-            Log.v("log_tag", "Width: " + v.getWidth());
-            Log.v("log_tag", "Height: " + v.getHeight());
+        //    Log.v("log_tag", "Width: " + v.getWidth());
+        //    Log.v("log_tag", "Height: " + v.getHeight());
 
             if (bitmap == null) {
                 bitmap = Bitmap.createBitmap(mContent.getWidth(), mContent.getHeight(), Bitmap.Config.RGB_565);
@@ -220,6 +220,7 @@ public class MainActivity extends AppCompatActivity {
                 bitmap.compress(Bitmap.CompressFormat.PNG, 90, mFileOutStream);
                 mFileOutStream.flush();
                 mFileOutStream.close();
+                viewImage(Preprocessing.class);
 
             } catch (Exception e) {
                 Log.v("log_tag", e.toString());
@@ -286,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
 
         private void debug(String string) {
 
-            Log.v("log_tag", string);
+ //           Log.v("log_tag", string);
 
         }
 
@@ -325,12 +326,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_settings:
                 break;
             case R.id.action_resize:
-                Toast.makeText(this, "preprocessing", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "preprocessing", Toast.LENGTH_SHORT).show();
                 viewImage(Preprocessing.class);
                 break;
             case R.id.action_daftar:
                 Toast.makeText(this, "daftar", Toast.LENGTH_SHORT).show();
                 viewImage(Daftar_TandaTangan.class);
+                break;
+
+            case R.id.action_template:
+                Toast.makeText(this, "template", Toast.LENGTH_SHORT).show();
+                viewImage(TemplateMacing.class);
                 break;
 
             case R.id.action_kirim_server:

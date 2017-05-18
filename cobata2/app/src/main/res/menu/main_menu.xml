@@ -9,6 +9,8 @@
         android:orderInCategory="100" app:showAsAction="never"/>
     <item android:id="@+id/action_daftar" android:title="Daftar"
         android:orderInCategory="100" app:showAsAction="never"/>
+    <item android:id="@+id/action_template" android:title="Template"
+        android:orderInCategory="100" app:showAsAction="never"/>
     <item android:id="@+id/action_kirim_server" android:title="Kirim Server"
         android:orderInCategory="100" app:showAsAction="never"/>
 

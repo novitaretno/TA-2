@@ -21,6 +21,7 @@
         </activity>
     <activity android:name=".Preprocessing"></activity>
         <activity android:name=".Daftar_TandaTangan"></activity>
+        <activity android:name=".TemplateMacing"></activity>
     </application>
 
 
